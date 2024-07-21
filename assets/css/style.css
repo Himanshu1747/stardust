@@ -1,0 +1,585 @@
+/* UNIVERSAL CSS  */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    transition: 0.3s ease-in;
+    display: inline-block;
+}
+
+p,
+li {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+
+li {
+    list-style: none;
+}
+
+input,
+textarea {
+    width: 100%;
+    transition: 0.3s ease-in;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    overflow: hidden;
+}
+
+:root {
+    --fs-70px: 70px;
+    --fs-50px: 50px;
+    --fs-25px: 25px;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-yellow: #feb406;
+    --color-grey: #282828;
+}
+
+/* UNIVERSAL CSS END */
+
+
+/* HEADER  */
+
+header.custome-header {
+    padding: 20px 0px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+}
+
+
+
+.logo-main {
+    max-width: 100px;
+    width: 100%;
+}
+
+ul.navlink {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact-me a,
+.contact-me p {
+    color: var(--color-white);
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-me {
+    background: var(--color-yellow);
+    max-width: fit-content;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+}
+
+.topoverlay {
+    position: absolute;
+    content: "";
+    height: 50%;
+    top: 0;
+    left: 0;
+    width: 0%;
+    background: var(--color-black);
+    transition: 0.3s linear;
+}
+
+.btmoverlay {
+    position: absolute;
+    content: "";
+    height: 50%;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    background: var(--color-black);
+    transition: 0.3s linear;
+}
+
+.contact-me:hover .topoverlay,
+.contact-me:hover .btmoverlay {
+    width: 100%;
+    background: var(--color-white);
+}
+
+.contact-me:hover a,
+.contact-me:hover p {
+    color: var(--color-black);
+}
+
+.contact-me p {
+    cursor: pointer;
+}
+
+
+
+
+
+
+.grid-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+
+}
+
+ul.navlink li a,
+ul.footer-navlist li a {
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+ul.navlink li a:hover,
+ul.footer-navlist li a:hover {
+    color: var(--color-yellow);
+}
+
+.active-menu {
+    color: var(--color-yellow) !important;
+}
+
+.menu-icon {
+    max-width: 30px;
+    width: 100%;
+    display: none;
+}
+
+
+/* HEADER END */
+
+
+
+/* HOME BANNER  */
+
+section.home-banner {
+    min-height: 945px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bgomage 8s linear infinite alternate;
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+@keyframes bgomage {
+    0% {
+        background-size: 100%;
+    }
+
+    100% {
+        background-size: 120%;
+    }
+}
+
+.main-title {
+    font-size: var(--fs-70px);
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.home-dataholder {
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    animation: onloaddata 1s ease-in;
+}
+
+@keyframes onloaddata {
+    0% {
+        opacity: 0;
+        left: 140%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0%;
+    }
+}
+
+.home-dataholder .contact-me {
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+/* HOME BANNER END */
+
+
+/* ABOUT US  */
+
+.sub-title {
+    font-size: var(--fs-50px);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.para-highlight {
+    color: var(--color-yellow);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.home-about .universal-anchor {
+    padding-top: 30px;
+}
+
+.home-about {
+    max-width: 700px;
+    margin-left: auto;
+}
+
+section.about-sec {
+    padding: 50px 0px;
+}
+
+/* ABOUT US END */
+
+
+/* WHY CHOOSE US SEC  */
+
+.whyonly-holder {
+    max-width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+section.whyus-sec {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 100px 0px;
+}
+
+.mini-title {
+    font-size: var(--fs-25px);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.icon-here i {
+    font-size: 35px;
+    color: var(--color-yellow);
+}
+
+.icon-here {
+    max-width: fit-content;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.grid-choose {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+
+
+.holder-choose {
+    max-width: 31%;
+    width: 100%;
+    border: 2px solid var(--color-white);
+    padding: 40px 20px;
+    background: var(--color-grey);
+    transition: 0.5s ease-in !important;
+    position: relative;
+    top: 0;
+
+}
+
+.holder-choose:hover {
+    border-color: var(--color-white);
+    background: var(--color-black);
+    top: -20px;
+}
+
+.holder-choose:hover .mini-title,
+.holder-choose:hover p,
+.holder-choose:hover i {
+    color: var(--color-white);
+}
+
+.holder-choose .mini-title,
+.holder-choose p,
+.holder-choose i {
+    transition: 0.3s ease-in;
+}
+
+.holder-choose p {
+    font-weight: 100;
+}
+
+/* WHY CHOOSE US SEC END */
+
+
+/* PRODUCT SEC  */
+
+.product-holder {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+section.product-sec {
+    padding: 80px 0px;
+}
+
+.rating-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.product-data {
+    max-width: 390px;
+    width: 100%;
+    margin: 0 auto;
+    background: #1c1c1c;
+}
+
+.image-product {
+    max-width: 100%;
+    height: 335px;
+    background: #282828;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.btm-product .mini-para,
+.btm-product .price-product {
+    color: var(--color-yellow);
+    font-weight: 500;
+}
+
+p.rating-data i {
+    color: var(--color-yellow);
+}
+
+.image-product img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.btm-product {
+    padding: 20px 10px;
+}
+
+.product-data p {
+    color: var(--color-white);
+    font-weight: 200;
+}
+
+.product-data .contact-me p {
+    font-weight: 500 !important;
+}
+
+.product-data:hover .contact-me .topoverlay,
+.product-data:hover .contact-me .btmoverlay {
+    width: 100%;
+    background: var(--color-white);
+}
+
+.product-data:hover .contact-me p {
+    color: var(--color-black);
+}
+
+
+.slider-product {
+    padding-top: 100px;
+    max-width: 90%;
+    margin-left: auto;
+}
+
+.grid-btn .swiper-button-prev,
+.grid-btn .swiper-button-next {
+    position: static;
+}
+
+.grid-btn {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    max-width: 100%;
+    margin-left: auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    position: relative;
+    right: 5%;
+}
+
+.grid-btn .swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.grid-btn .swiper-rtl .swiper-button-next:after {
+    color: var(--color-white);
+    font-size: 30px;
+    background: var(--color-yellow);
+    color: #fff;
+    height: 59px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+/* PRODUCT SEC END */
+
+
+/* FAQ SEC  */
+
+
+section.faq-sec {
+    padding: 80px 0px;
+}
+
+section.faq-sec .whyonly-holder {
+    padding-bottom: 100px;
+}
+
+section.faq-sec .universal-anchor {
+    max-width: fit-content;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.faq-image {
+    max-width: fit-content;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.list-data ul li {
+    list-style: disc;
+}
+
+
+.list-data ul li::marker {
+    color: var(--color-yellow);
+}
+
+
+/* FAQ SEC END */
+
+
+/* FOOTER  */
+
+.logo-footer {
+    max-width: 200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+footer.custome-footer {
+    padding-bottom: 15px;
+    border-top: 1px solid #8d8686;
+}
+
+.logo-container {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btm-datafooter {
+    padding-top: 30px;
+}
+
+ul.navlink li,
+ul.footer-navlist li {
+    padding-bottom: 0px;
+}
+
+ul.footer-navlist {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    border-top: 1px solid #6b6b6b;
+    border-bottom: 1px solid #6b6b6b;
+}
+
+.logo-container {
+    padding: 100px 0px;
+}
+
+
+/* FOOTER END */
