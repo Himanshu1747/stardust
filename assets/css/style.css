@@ -78,6 +78,11 @@ section {
     --color-grey: #282828;
 }
 
+
+.text-yellow {
+    color: var(--color-yellow);
+}
+
 /* UNIVERSAL CSS END */
 
 
@@ -535,6 +540,10 @@ section.faq-sec .universal-anchor {
     color: var(--color-yellow);
 }
 
+.datarowsmain div#data-3 {
+    order: -1;
+}
+
 
 /* FAQ SEC END */
 
@@ -583,3 +592,126 @@ ul.footer-navlist {
 
 
 /* FOOTER END */
+
+
+/* ABOUT  */
+
+section.about-secmain {
+    min-height: 650px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.about-secmain::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: #0000008a;
+}
+
+
+.about-bannertitles {
+    max-width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.about-detailsimage {
+    max-width: 775px;
+    width: 100%;
+    margin-left: auto;
+}
+
+section.aboutdetails-sec .home-about {
+    margin: 0;
+}
+
+ul.product-qualitylist li {
+    display: flex;
+    gap: 10px;
+}
+
+ul.product-qualitylist li span.lists-icon {
+    color: var(--color-yellow);
+}
+
+ul.product-qualitylist {
+    padding-top: 30px;
+}
+
+section.aboutdetails-sec {
+    background-repeat: no-repeat;
+    background-size: 312px;
+    background-position: -5% 110%;
+}
+
+
+section.mostsold-productsec,
+section.aboutdetails-sec {
+    padding: 80px 0px;
+}
+
+
+
+
+.suugest-pic {
+    max-width: 335px;
+    height: 335px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2b2b2b;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.suugest-pic img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    transition: 0.3s ease-in;
+}
+
+.suugest-pic:hover img{
+    filter: drop-shadow(2px 4px 6px black);
+
+}
+
+
+.productdata-suggest {
+    max-width: 90%;
+    margin-left: auto;
+}
+
+
+
+.oodeven-row .row-productsdatahere:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.oodeven-row .row-productsdatahere:nth-child(even) .productdata-suggest {
+    margin: 0;
+}
+
+.oodeven-row {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding-top: 100px;
+}
+
+section.aboutdetails-sec .home-about{
+    padding-top:0px;
+}
+
+
+
+
+/* ABOUT END */

@@ -12,7 +12,8 @@
 
     }
 
-    p,li{
+    p,
+    li {
         font-size: 18px;
     }
 
@@ -24,7 +25,8 @@
         min-height: 765px;
     }
 
-    ul.navlink li a,ul.footer-navlist li a {
+    ul.navlink li a,
+    ul.footer-navlist li a {
         font-size: 16px;
     }
 
@@ -58,26 +60,46 @@
         width: 48px;
         font-size: 25px;
     }
-    section.product-sec{
+
+    section.product-sec {
         padding: 60px 0px;
     }
-    section.faq-sec{
+
+    section.faq-sec {
         padding: 60px 0px;
     }
-    section.faq-sec .whyonly-holder{
+
+    section.faq-sec .whyonly-holder {
         padding-bottom: 60px;
     }
 
-    section.faq-sec .universal-anchor{
+    section.faq-sec .universal-anchor {
         padding-top: 50px;
     }
 
     .logo-footer {
         max-width: 170px;
     }
-    .logo-container{
+
+    .logo-container {
         padding: 70px 0px;
     }
+
+    section.about-sec {
+        min-height: 550px;
+    }
+
+    section.mostsold-productsec,
+    section.aboutdetails-sec {
+        padding: 60px 0px;
+    }
+    .oodeven-row{
+        padding-top: 50px;
+    }
+    .oodeven-row{
+        gap: 50px;
+    }
+
 }
 
 @media(max-width:1400px) {
@@ -88,12 +110,14 @@
 
     }
 
-    p,li {
+    p,
+    li {
         font-size: 16px;
         line-height: 28px;
     }
 
-    ul.navlink li a,ul.footer-navlist li a {
+    ul.navlink li a,
+    ul.footer-navlist li a {
         font-size: 14px;
     }
 
@@ -139,27 +163,43 @@
         height: 260px;
         padding: 15px;
     }
+
     .product-data {
         max-width: 300px;
     }
-    .grid-btn .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .grid-btn .swiper-rtl .swiper-button-next:after {
+
+    .grid-btn .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after,
+    .swiper-button-prev:after,
+    .grid-btn .swiper-rtl .swiper-button-next:after {
         height: 30px;
         width: 30px;
         font-size: 20px;
     }
-    section.faq-sec .universal-anchor{
+
+    section.faq-sec .universal-anchor {
         padding-top: 40px;
     }
 
     .logo-footer {
         max-width: 130px;
     }
+
     .logo-container {
         padding: 50px 0px;
     }
 
-    ul.footer-navlist{
+    ul.footer-navlist {
         padding: 10px;
+    }
+
+    section.about-sec {
+        min-height: 460px;
+    }
+
+    .suugest-pic {
+        height: 255px;
+        padding: 15px;
     }
 }
 
@@ -168,18 +208,34 @@
         --fs-70px: 40px;
     }
 
-    p,li {
+    p,
+    li {
         font-size: 14px;
         line-height: 25px;
     }
-    .slider-product{
+
+    .slider-product {
         padding-top: 40px;
     }
-    .product-holder{
+
+    .product-holder {
         max-width: 100%;
     }
-    
-    
+
+    section.about-sec {
+        min-height: 400px;
+    }
+
+    .suugest-pic {
+        height: 220px;
+        padding: 15px;
+    }
+
+    ul.product-qualitylist{
+        padding-top: 10px;
+    }
+
+
 }
 
 @media(max-width:991px) {
@@ -256,11 +312,11 @@
         padding-top: 40px;
     }
 
-    .product-datas{
+    .product-datas {
         padding-top: 10px;
     }
 
-    .faq-image{
+    .faq-image {
         margin: 30px 0px;
     }
 
@@ -270,28 +326,61 @@
         margin: 0 auto;
     }
 
-    section.faq-sec{
+    section.faq-sec {
         padding: 40px 0px;
     }
 
-    .faq-data,.faq-image {
+    .faq-data,
+    .faq-image {
         max-width: fit-content;
         margin: 0 auto;
         width: 100%;
     }
+
     .logo-footer {
         max-width: 100px;
     }
 
-    .logo-container{
+    .logo-container {
         padding: 40px 0px;
     }
-    .logo-container{
+
+    .logo-container {
         max-width: 100%;
     }
-    
 
-  
+    .suugest-pic {
+        height: 380px;
+        padding: 15px;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+
+    .productdata-suggest{
+        max-width:600px;
+        margin: 0 auto;
+        padding-top:30px;
+    }
+    section.mostsold-productsec, section.aboutdetails-sec{
+        padding: 50px 0px;
+    }
+
+    .about-detailsimage {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    
+    section.aboutdetails-sec .home-about{
+        padding-bottom: 30px;
+    }
+
+    section.aboutdetails-sec {
+        background-image: none !important;
+    }
+
+
+
 }
 
 @media(max-width:767px) {
@@ -307,14 +396,22 @@
         padding: 20px 10px 0px 10px;
     }
 
-    section.product-sec{
+    section.product-sec {
         padding: 40px 0px;
     }
 
-    ul.footer-navlist{
+    ul.footer-navlist {
         gap: 10px;
     }
 
 
 
+}
+
+
+@media(max-width:575px){
+    .suugest-pic {
+        height: 320px;
+        max-width: 360px;
+    }
 }
