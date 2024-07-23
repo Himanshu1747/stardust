@@ -404,6 +404,11 @@ section.product-sec {
     justify-content: space-between;
     gap: 10px;
     flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+.rating-grid p{
+    padding: 0px;
 }
 
 .product-data {
@@ -604,6 +609,7 @@ section.about-secmain {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
 }
 
 section.about-secmain::after {
@@ -679,7 +685,7 @@ section.aboutdetails-sec {
     transition: 0.3s ease-in;
 }
 
-.suugest-pic:hover img{
+.suugest-pic:hover img {
     filter: drop-shadow(2px 4px 6px black);
 
 }
@@ -707,11 +713,82 @@ section.aboutdetails-sec {
     padding-top: 100px;
 }
 
-section.aboutdetails-sec .home-about{
-    padding-top:0px;
+section.aboutdetails-sec .home-about {
+    padding-top: 0px;
 }
 
 
 
 
 /* ABOUT END */
+
+
+
+
+
+/* PRODUCTS SEC  */
+
+
+.producttab-holder .tab-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 80px;
+}
+
+
+.producttab-holder .tab-list li a {
+    color: var(--color-white);
+    background: var(--color-yellow);
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+
+.producttab-holder .tab-list li.active a {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+.producttab-holder .tab-list li a:hover {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+.grid-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.grid-products .product-data {
+    max-width: 23%;
+    margin: 0px;
+}
+
+
+.producttab-holder {
+    padding-top: 100px;
+}
+
+
+
+
+section.products-mainsec {
+    padding: 80px 0px;
+}
+
+
+.universal-anchor.main {
+    max-width: fit-content;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+
+
+
+/* PRODUCTS SEC END */

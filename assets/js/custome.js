@@ -59,7 +59,67 @@ var swiper = new Swiper(".mySwiperproduct", {
         }
     },
 });
+
+
 // PRODUCT SLIDER END
+
+
+// PRODUCTS TAB 
+
+
+// Show the first tab and hide the rest
+$('#tabs-nav li:first-child').addClass('active');
+$('.tab-content').hide();
+$('.tab-content:first').show();
+
+// Click function
+$('#tabs-nav li').click(function () {
+    $('#tabs-nav li').removeClass('active');
+    $(this).addClass('active');
+    $('.tab-content').hide();
+
+    var activeTab = $(this).find('a').attr('href');
+    $(activeTab).fadeIn();
+    return false;
+});
+
+
+
+// PRODUCTS TAB ED\
+
+
+
+
+// EQUAL HEIGHT 
+
+
+$(document).ready(function(){
+    $maxHeight = 0;
+      $(".rating-grid ").each(function(){
+        if($(this).height() > $maxHeight) {
+          $maxHeight = $(this).height();
+        }
+      });
+      $(".rating-grid ").height($maxHeight);
+      $('html,body').animate({
+        scrollTop : $(".di").offset().top
+      })
+    });
+$(document).ready(function(){
+    $maxHeight = 0;
+      $(".product-data").each(function(){
+        if($(this).height() > $maxHeight) {
+          $maxHeight = $(this).height();
+        }
+      });
+      $(".product-data").height($maxHeight);
+      $('html,body').animate({
+        scrollTop : $(".di").offset().top
+      })
+    });
+
+
+// EQUAL HEIGHT END
 
 
 
