@@ -93,33 +93,87 @@ $('#tabs-nav li').click(function () {
 // EQUAL HEIGHT 
 
 
-$(document).ready(function(){
+$(document).ready(function () {
     $maxHeight = 0;
-      $(".rating-grid ").each(function(){
-        if($(this).height() > $maxHeight) {
-          $maxHeight = $(this).height();
+    $(".rating-grid ").each(function () {
+        if ($(this).height() > $maxHeight) {
+            $maxHeight = $(this).height();
         }
-      });
-      $(".rating-grid ").height($maxHeight);
-      $('html,body').animate({
-        scrollTop : $(".di").offset().top
-      })
     });
-$(document).ready(function(){
+    $(".rating-grid ").height($maxHeight);
+    $('html,body').animate({
+        scrollTop: $(".di").offset().top
+    })
+});
+$(document).ready(function () {
     $maxHeight = 0;
-      $(".product-data").each(function(){
-        if($(this).height() > $maxHeight) {
-          $maxHeight = $(this).height();
+    $(".product-data").each(function () {
+        if ($(this).height() > $maxHeight) {
+            $maxHeight = $(this).height();
         }
-      });
-      $(".product-data").height($maxHeight);
-      $('html,body').animate({
-        scrollTop : $(".di").offset().top
-      })
     });
+    $(".product-data").height($maxHeight);
+    $('html,body').animate({
+        scrollTop: $(".di").offset().top
+    })
+});
 
 
 // EQUAL HEIGHT END
+
+
+
+
+// ADD CART 
+
+function increaseValue() {
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number').value = value;
+}
+
+function decreaseValue() {
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value < 1 ? value = 1 : '';
+    value--;
+    document.getElementById('number').value = value;
+    console.log(document.getElementById('number').value);
+}
+
+// ADD CART END
+
+
+// SINGLE PRODUCT 
+
+
+var swiper = new Swiper(".mySwiper1", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
+    // effect: 'fade',
+    // speed: 1000,
+    loop: "true",
+    // fadeEffect: {
+    //     crossFade: true
+    // },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper,
+    },
+});
+
+
+// SINGLE PRODUCT END
+
 
 
 
