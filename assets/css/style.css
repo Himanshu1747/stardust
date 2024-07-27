@@ -185,7 +185,7 @@ ul.navlink {
 }
 
 ul.navlink li a,
-ul.footer-navlist li a {
+ul.footer-navlist li a,.cart-item a{
     color: var(--color-white);
     font-size: 18px;
     font-weight: 400;
@@ -193,7 +193,7 @@ ul.footer-navlist li a {
 }
 
 ul.navlink li a:hover,
-ul.footer-navlist li a:hover {
+ul.footer-navlist li a:hover,.cart-item a:hover{
     color: var(--color-yellow);
 }
 
@@ -205,6 +205,37 @@ ul.footer-navlist li a:hover {
     max-width: 30px;
     width: 100%;
     display: none;
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: fit-content;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.cart-item{
+    position: relative;
+    max-width: fit-content;
+    width: 100%;
+}
+
+span.quantity-product {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: #55534f;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: inherit;
 }
 
 
@@ -1042,3 +1073,1727 @@ section.section.empty-banner {
 
 
 /* CART PAGE END */
+
+
+
+
+
+
+/* CHEXK OUT PAGE MAIN  */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* /* loogin poup css start  */
+.pouplogin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+    z-index: 1000;
+}
+
+span.closedata {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.logindata {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.logindata {
+    max-width: 1290px;
+    margin: 0 auto;
+    background-color: #fff;
+
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+button.closeloginpoup {
+    position: absolute;
+    top: -22px;
+    right: -28px;
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 35px;
+    background: #fff;
+    height: 35px;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+.mainformdata {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    height: 600px;
+}
+
+
+.mainformdata .title {
+    position: relative;
+    padding: 30px;
+    max-width: 50%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainformdata .content {
+    position: relative;
+    z-index: 99;
+}
+
+.mainformdata .content h2 {
+    color: #fff;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.mainformdata .content h3 {
+    color: #fff;
+    font-size: 22px;
+    line-height: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.mainformdata .content span {
+    color: #fff;
+    font-size: 18px;
+    max-width: 400px;
+    line-height: 30px;
+    width: 100%;
+    display: block;
+}
+
+section.pouplogin .title ul {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    padding-top: 40px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+section.pouplogin .title ul li.current {
+    color: #000;
+    background-color: #fff;
+}
+
+section.pouplogin .title ul li {
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: 400;
+    padding: 10px 30px;
+    max-width: 250px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.formlogin {
+    max-width: 50%;
+    width: 100%;
+    padding: 50px 20px;
+}
+
+.tab-content.current {
+    display: block;
+    animation: animatilogin 0.3s ease-in;
+}
+
+
+.tab-content {
+    display: none;
+}
+
+.formlogin form {
+    width: 100%;
+    max-width: 100%;
+}
+
+.formlogin form h2 {
+    font-size: 30px;
+    line-height: 40px;
+    color: #000;
+    font-weight: 700;
+    color: #000;
+    margin: 20px 0px;
+}
+
+.fileds {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.formlogin form label {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.filedsdata input,
+.fileds input {
+    border: 1px solid #C4C4C4;
+    outline: none;
+    padding: 15px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.formlogin .tab-content input[type="submit"],
+.formlogin .tab-content.login input[type="submit"] {
+    border-radius: 5px;
+    background: #D22F25;
+    border: none;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25.6px;
+    padding: 18px 73px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 45px;
+    transition: 0.3s ease-in;
+    width: 100%;
+}
+
+.formlogin .tab-content input[type="submit"]:hover,
+.formlogin .tab-content.login input[type="submit"]:hover {
+    background: #000;
+
+}
+
+
+.formlogin form a {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: 20px;
+    display: block;
+}
+
+.formlogin form .condistions a {
+    display: inline;
+    margin: 0px;
+}
+
+.verify {
+    display: flex;
+    align-items: center;
+
+}
+
+.condistions p,
+.condistions .verify label {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* input[type="checkbox"] {
+    position: relative;
+    border: 2px solid #000;
+    border-radius: 2px;
+    background: none;
+    cursor: pointer;
+    line-height: 0;
+    margin-right: 11px;
+    outline: 0;
+    padding: 0 !important;
+    vertical-align: text-top;
+    height: 20px;
+    width: 20px;
+    -webkit-appearance: none;
+    opacity: .5;
+}
+input[type=checkbox]:hover {
+    opacity: 1;
+} */
+.mainformdata .title::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pouplogin.showpoup {
+    display: block;
+    animation: animte-drop-down 0.9s ease-in;
+
+}
+
+
+@keyframes animte-drop-down {
+    0% {
+        opacity: 0;
+
+        -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%);
+        clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%);
+    }
+
+    100% {
+        opacity: 1;
+
+        -webkit-clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%);
+        clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%);
+    }
+}
+
+
+
+
+@keyframes animatilogin {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/* payment page csss */
+
+
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.form-card {
+    text-align: left
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+
+
+li {
+    list-style: none;
+}
+
+.container-data {
+    display: flex;
+}
+
+input {
+    margin-bottom: 0px;
+}
+
+* {
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.payment-tab {
+    max-width: 50%;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.payment-tab .payment {
+    max-width: 635px;
+    width: 100%;
+    margin-left: auto;
+
+}
+
+section.multistep-payment .cart-data {
+    max-width: 50%;
+    width: 100%;
+    padding-left: 65px;
+    background: #F6F6F6;
+    min-height: 100vh;
+
+
+}
+
+.payment-tab .payment {
+    padding-top: 30px;
+    padding-right: 65px;
+}
+
+ul#progressbar {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 25px;
+}
+
+#msform {
+    margin-top: 0px;
+}
+
+#progressbar li:before {
+    display: none;
+}
+
+#progressbar li:after {
+    display: none;
+}
+
+#progressbar li {
+    text-align: left;
+    width: auto;
+    max-width: auto;
+    color: #000;
+
+}
+
+#progressbar li.active {
+    color: #7e7e7e;
+}
+
+/* #progressbar li.active + li {
+    color: #000000;
+} */
+
+#progressbar li strong {
+    font-family: Poppins, sans-serif;
+    ;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+
+}
+
+ul#progressbar {
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px;
+
+}
+
+ul#progressbar li img {
+    margin: 0px 12px;
+}
+
+.mainpaymentgatway {
+    border-radius: 5px;
+    border: 1px solid #E6E6E6;
+    padding: 22px 0px;
+    position: relative;
+}
+
+.mainpaymentgatway span {
+    position: absolute;
+    top: -13px;
+    padding: 0px 10px;
+    background-color: #ffffff;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #525C64;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    /* 150% */
+}
+
+.mainpaymentgatway a {
+    margin: 0px 25px 0px;
+    display: inline-block;
+}
+
+.or {
+    position: relative;
+    margin-top: 20px;
+}
+
+.or::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 0.5px;
+    background-color: #525c6442;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.or span {
+    color: #474E57;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    /* 114.286% */
+    padding: 10px 10px;
+    position: relative;
+    background-color: #fff;
+    z-index: 2;
+
+
+
+}
+
+.form-card {
+    padding-top: 65px;
+}
+
+.fs-title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    /* 116.667% */
+    padding-bottom: 23px;
+    margin-bottom: 0px;
+}
+
+.emaildata label {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 150% */
+    padding-bottom: 3px;
+}
+
+.sucscribeemail {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 13px;
+}
+
+.sucscribeemail input#email {
+    max-width: 360px;
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #DEDEDE;
+    padding: 0px 8px;
+    outline: none;
+}
+
+.sucscribeemail input.submitemail {
+    border-radius: 4px;
+    border: 1px solid #000;
+    background: #1A1A1A;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 12px 60px;
+    max-width: fit-content;
+    text-align: center;
+    width: 100%;
+}
+
+.signup {
+    display: flex;
+    gap: 6px;
+    padding-bottom: 20px;
+}
+
+.signup a {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 150% */
+    text-decoration: none;
+}
+
+.signup p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 150% */
+    margin-bottom: 0px;
+}
+
+.offeronemail {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    padding-bottom: 37px;
+}
+
+.offeronemail label {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 150% */
+}
+
+.dropdown1 {
+    padding: 10px 13px;
+    border-radius: 4px;
+    border: 1px solid #DEDEDE;
+}
+
+.dropdown1 p {
+    margin-bottom: 0px;
+    color: #747474;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 175% */
+}
+
+.dropdown1 select {
+    width: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    background-position: 100% center;
+}
+
+.info {
+    display: flex;
+    gap: 16px;
+    padding: 19px 0px;
+}
+
+.info input {
+    border: none;
+    outline: none;
+    width: 100%;
+    max-width: 50%;
+    padding: 19px 13px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 131.25% */
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 131.25% */
+    border-radius: 4px;
+    border: 1px solid #DEDEDE;
+}
+
+.info input::placeholder {
+    color: #000000;
+}
+
+.info.data {
+    padding-top: 0px;
+}
+
+.info.data input {
+    width: 100%;
+    max-width: 100%;
+}
+
+.dropdown1.info-data,
+.info.info-data input {
+    width: 100%;
+    max-width: 100%;
+}
+
+.next-time .save {
+    padding-bottom: 7px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.next-time .save label {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 150% */
+}
+
+.data-next {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 44px;
+    border-bottom: 1px solid #DEDEDE;
+    margin-bottom: 19px;
+}
+
+.data-next a {
+    text-decoration: none;
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 150% */
+}
+
+input.payenow,
+input.next.action-button {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    /* 150% */
+    border-radius: 4px;
+    border: 1px solid #000;
+    background: #000;
+    padding: 13px 23px;
+    max-width: 200px;
+}
+
+fieldset p {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 150% */
+}
+
+fieldset p a {
+    color: #000;
+    text-decoration: none;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 150% */
+}
+
+.cart-data {
+    padding-top: 250px;
+}
+
+.cart-data ul {
+    padding: 0px;
+    margin: 0px;
+    max-width: 480px;
+    width: 100%;
+}
+
+
+.cart-data ul.list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.product {
+    display: flex;
+    gap: 15px;
+}
+
+.cart-data ul.list li h2 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 125% */
+    letter-spacing: -0.416px;
+    margin-bottom: 0px;
+    padding-bottom: 8px;
+}
+
+.cart-data ul.list li p.title {
+    margin-bottom: 0px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.cart-data ul.list li .productimg {
+    position: relative;
+}
+
+.cart-data ul.list li .productimg span {
+    position: absolute;
+    z-index: 999;
+    width: 23px;
+    height: 23px;
+    display: block;
+    text-align: center;
+    line-height: 23px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -0.364px;
+    background-color: #747474;
+    top: -13px;
+    right: 4px;
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+}
+
+.total {
+    margin-top: 30px;
+
+
+}
+
+.total ul {
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    padding: 20px 0px;
+}
+
+.total ul li {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.total ul li:last-child {
+    padding-bottom: 0px;
+}
+
+.total ul li span {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+    letter-spacing: -0.364px;
+}
+
+.total-sub {
+    margin-top: 21px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 470px;
+    width: 100%;
+}
+
+.total-sub span {
+    color: #000;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 86.957% */
+    letter-spacing: -0.598px;
+
+}
+
+
+.form-card.shiping {
+    padding-top: 0px;
+}
+
+.form-card.shiping ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.form-card.shiping {
+    padding: 17px;
+    border-radius: 4px;
+    border: 1px solid #DEDEDE;
+}
+
+.form-card.shiping ul li {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 150% */
+}
+
+.form-card.shiping ul li a {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 150% */
+    text-decoration-line: underline;
+    text-decoration: underline;
+}
+
+.form-card.shiping ul li span.contact {
+    color: #747474;
+}
+
+.form-card.shiping ul li span.email {
+    max-width: 352px;
+    width: 100%;
+    display: block;
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 150% */
+}
+
+.form-card.shiping ul li span.email.parice {
+    max-width: 445px;
+}
+
+.form-card.shiping ul li {
+    padding: 15px 0px;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.form-card.shiping ul li:last-child {
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+
+.form-card.shiping ul li:first-child {
+    padding-top: 0px;
+
+}
+
+.method-data {
+    padding: 40px 0px;
+}
+
+.method-data h2 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    /* 116.667% */
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.method-data ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.method-data ul li {
+    display: flex;
+    padding: 22px 17px;
+    justify-content: space-between;
+    border-radius: 4px;
+    border: 1px solid #000;
+    background: #F1F5FF;
+}
+
+.method-data.payment p {
+    color: #747474;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 150% */
+    margin-bottom: 14px;
+}
+
+.method-data.payment.cart {
+    padding-right: 0px;
+}
+
+.crat-product-data {
+    height: 100vh;
+    max-width: 600px;
+    padding-right: 10px;
+    width: 100%;
+    overflow: auto;
+    padding-top: 15px;
+}
+
+.paymentdata .header-p {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    border-radius: 4px 4px 0px 0px;
+    border: 1px solid #000;
+    background: #F1F5FF;
+}
+
+.paymentdata .header-p label {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 150% */
+}
+
+.body-cart {
+    padding: 18px;
+    border: 1px solid #DEDEDE;
+    background: #F5F5F5;
+    border-bottom: none;
+}
+
+/* end payment page css */
+.inputfileds {
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 15px;
+
+}
+
+.inputfileds input {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    padding: 12px 18px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+    outline: none;
+    padding-right: 0px;
+    border-right: none;
+}
+
+.inputfileds button {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border: 1px solid #DEDEDE;
+    border-left: none;
+    padding-right: 14px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.inputfileds.name input {
+    border: 1px solid #DEDEDE;
+    border-radius: 4px;
+    padding-right: 15px;
+}
+
+.inputfileds .cvv {
+    display: flex;
+    width: 100%;
+}
+
+.inputfileds.cvvdata {
+
+    gap: 14px;
+    background-color: transparent;
+}
+
+.inputfileds.cvvdata .expiry input {
+    border: 1px solid #DEDEDE;
+    border-radius: 4px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.inputfileds.cvvdata .expiry {
+    width: 100%;
+}
+
+.footer-payment {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0px 0px 4px 4px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+    padding: 18px;
+}
+
+.method-data.payment-data {
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.method-data.payment-data ul li {
+    justify-content: flex-start;
+    gap: 11px;
+}
+
+.method-data.payment-data ul li.active {
+    border-radius: 4px 4px 0px 0px;
+    border: 1px solid #000;
+    background: #F1F5FF;
+}
+
+.method-data.payment-data ul li {
+    background-color: #fff;
+    border-radius: 0px 0px 4px 4px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+}
+
+/* custom radio box */
+
+.container01 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    /* font-size: 22px; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    text-align: left;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+
+.container01 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+}
+
+/* On mouse-over, add a grey background color */
+
+.container01:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+
+.container01 input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container01 input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+
+.container01 .checkmark:after {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* .checkbox .container input:checked ~ .checkmark{
+    background-color: transparent;
+  } */
+
+.container1 {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    /* background-color: #eee; */
+    border-radius: 3px;
+    border: 1px solid #000;
+}
+
+/* On mouse-over, add a grey background color */
+/* .container1:hover input ~ .checkmark1 {
+    background-color: #ccc;
+  } */
+
+/* When the checkbox is checked, add a blue background */
+.container1 input:checked~.checkmark1 {
+    background-color: #2196F3;
+    border: 1px solid #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark1:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container1 input:checked~.checkmark1:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container1 .checkmark1:after {
+    top: 50%;
+    left: 50%;
+
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+section.multistep-payment .cart-data .header {
+    padding-bottom: 40px;
+    display: none;
+    text-align: center;
+}
+
+.price {
+    color: var(--color-black);
+}
+
+.method-data {
+    color: #000;
+}
+
+.data-next span {
+    font-weight: 600;
+}
+
+
+/* resposnive css */
+
+@media(max-width:1600px) {
+    .mainformdata .content h2 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 0px;
+    }
+
+    .mainformdata .content h3 {
+        font-size: 20px;
+        padding: 15px 0px;
+        margin-bottom: 0px;
+    }
+
+    .mainformdata .content span {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    section.pouplogin .title ul li {
+        font-size: 16px;
+        padding: 8px 25px;
+    }
+
+    .formlogin form h2 {
+        font-size: 25px;
+        line-height: 35px;
+        margin: 15px 0px;
+    }
+
+    .formlogin form label {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .filedsdata input,
+    .fileds input {
+        padding: 10px;
+        font-size: 15px;
+        line-height: normal;
+    }
+
+    .formlogin form a {
+        font-size: 16px;
+    }
+
+    .formlogin .tab-content input[type="submit"],
+    .formlogin .tab-content.login input[type="submit"] {
+        font-size: 16px;
+        padding: 10px 0px;
+    }
+
+    .mainformdata {
+        height: 550px;
+    }
+}
+
+@media(max-width:1400px) {
+    .payment-tab .payment {
+        max-width: 500px;
+        padding-right: 20px;
+    }
+
+    #progressbar li strong {
+        font-size: 14px;
+    }
+
+    .mainpaymentgatway a img {
+        max-width: 185px;
+    }
+
+    .form-card {
+        padding-top: 30px;
+    }
+
+    .fs-title {
+        margin-bottom: 15px;
+        padding-bottom: 0px;
+    }
+
+    .sucscribeemail input.submitemail {
+        padding: 10px 30px;
+    }
+
+    .sucscribeemail input#email {
+        max-width: 330px;
+    }
+
+    .signup {
+        padding-bottom: 15px;
+    }
+
+    .offeronemail label {
+        margin-bottom: 0px;
+    }
+
+    .offeronemail {
+        padding-bottom: 20px;
+    }
+
+    .info input {
+        padding: 10px 13px;
+        font-size: 14px;
+    }
+
+    .info {
+        padding: 12px 0px;
+    }
+
+    .dropdown1 select {
+        font-size: 14px;
+    }
+
+    .dropdown1 p {
+        line-height: normal;
+    }
+
+    input.next.action-button {
+        padding: 12px 15px;
+    }
+
+    .cart-data ul.list li h2 {
+        font-size: 14px;
+    }
+
+    .total-sub span {
+        font-size: 18px;
+    }
+
+    .method-data ul li {
+        padding: 10px 15px;
+    }
+
+    ul#progressbar {
+        padding-bottom: 40px;
+    }
+
+    .form-card.shiping ul li span.contact,
+    .form-card.shiping ul li span.email {
+        font-size: 14px;
+    }
+
+    section.multistep-payment .cart-data {
+        padding-left: 20px;
+    }
+
+    label.container01,
+    label.container1 {
+        font-size: 14px;
+    }
+
+    .checkmark {
+        width: 20px;
+        height: 20px;
+    }
+
+    .form-card.shiping ul li span.email {
+        max-width: 310px;
+    }
+}
+
+@media(max-width:1200px) {
+    .mainformdata .content h2 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 0px;
+    }
+
+    .mainformdata .content h3 {
+        font-size: 18px;
+        padding: 10px 0px;
+        margin-bottom: 0px;
+    }
+
+    .mainformdata .content span {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    section.pouplogin .title ul li {
+        font-size: 15px;
+        padding: 8px 25px;
+    }
+
+    .formlogin form h2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 12px 0px;
+    }
+
+    .formlogin form label {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .filedsdata input,
+    .fileds input {
+        padding: 8px;
+        font-size: 15px;
+        line-height: normal;
+    }
+
+    .formlogin form a {
+        font-size: 15px;
+    }
+
+    .formlogin .tab-content input[type="submit"],
+    .formlogin .tab-content.login input[type="submit"] {
+        font-size: 15px;
+        padding: 10px 0px;
+    }
+
+    .mainformdata {
+        height: 500px;
+    }
+
+    .logindata {
+        max-width: 950px;
+    }
+
+    .mainformdata {
+        gap: 20px;
+    }
+
+    .payment-tab .payment {
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+
+    section.multistep-payment .cart-data {
+        padding-right: 20px;
+    }
+
+    .sucscribeemail input#email {
+        max-width: 310px;
+    }
+
+    .form-card.shiping ul li span.email {
+        max-width: 280px;
+    }
+}
+
+@media(max-width:991px) {
+    .container-data {
+        flex-direction: column-reverse;
+    }
+
+    section.multistep-payment .cart-data {
+        padding-top: 30px;
+    }
+
+    .crat-product-data {
+        height: auto;
+        overflow: auto;
+    }
+
+
+
+    .mainformdata {
+        flex-direction: column;
+    }
+
+    .mainformdata .title {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .mainformdata .title {
+        justify-content: flex-start;
+    }
+
+    .mainformdata .content span {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .formlogin {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .formlogin {
+        padding-top: 0px;
+    }
+
+    .logindata {
+        max-width: 80%;
+
+    }
+
+    .mainformdata {
+        height: 745px;
+    }
+
+    section.pouplogin.showpoup {
+        overflow: auto;
+    }
+
+    .payment-tab,
+    section.multistep-payment .cart-data {
+        max-width: 100%;
+    }
+
+    .cart-data ul,
+    .total-sub,
+    .crat-product-data,
+    .payment-tab .payment {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .total-sub {
+        margin-top: 30px;
+    }
+
+    section.multistep-payment .cart-data {
+        min-height: auto;
+        padding-bottom: 50px;
+    }
+
+    section.multistep-payment .payment .header {
+        display: none;
+    }
+
+    section.multistep-payment .payment {
+        padding-top: 20px;
+    }
+
+    section.multistep-payment .cart-data .header {
+        display: block;
+    }
+}
+
+@media(max-width:665px) {
+
+    .cart-data ul,
+    .total-sub,
+    .crat-product-data,
+    .payment-tab .payment {
+        max-width: 100%;
+    }
+
+    .method-data.payment.cart {
+        padding-left: 0px;
+    }
+
+    .inputfileds.cvvdata,
+    .info {
+        flex-direction: column;
+    }
+
+    .info input {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .body-cart {
+        padding: 15px;
+    }
+
+}
+
+@media(max-width:428px) {
+    ul#progressbar {
+        display: none;
+    }
+
+    section.multistep-payment .payment {
+        padding-top: 50px;
+    }
+
+    .sucscribeemail input#email {
+        max-width: 220px;
+    }
+
+    .sucscribeemail input.submitemail {
+        padding: 10px;
+    }
+
+    input.next.action-button {
+        padding: 10px;
+    }
+}
+
+
+/* CHEXK OUT PAGE MAIN END */
+
+
+/* HOW TO ORDER PRODUCT  */
+
+
+.order-process{
+    padding-top: 80px;
+}
+
+
+/* HOW TO ORDER PRODUCT END */
