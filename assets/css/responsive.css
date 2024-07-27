@@ -32,7 +32,8 @@
     }
 
     .contact-me a,
-    .contact-me p,.submit-btn button{
+    .contact-me p,
+    .submit-btn button {
         padding: 8px 20px;
         font-size: 16px;
     }
@@ -134,12 +135,20 @@
         font-size: 8px;
     }
 
-    
-    section.contact-sec{
+
+    section.contact-sec {
         padding: 60px 0px;
     }
 
-    .from-holder{
+    .from-holder {
+        padding-top: 50px;
+    }
+
+    .iframe-holder iframe {
+        height: 400px;
+    }
+
+    .video-frameholder {
         padding-top: 50px;
     }
 
@@ -170,7 +179,8 @@
     }
 
     .contact-me a,
-    .contact-me p,.submit-btn button {
+    .contact-me p,
+    .submit-btn button {
         padding: 5px 20px;
         font-size: 14px;
     }
@@ -280,12 +290,26 @@
         gap: 20px !important;
     }
 
-    .input-holder input, .input-holder textarea, .input-holder select {
+    .input-holder input,
+    .input-holder textarea,
+    .input-holder select {
         height: 40px;
     }
 
-    .input-holder input, .input-holder input::-webkit-input-placeholder, .input-holder textarea, .input-holder textarea::-webkit-input-placeholder, .input-holder select {
+    .input-holder input,
+    .input-holder input::-webkit-input-placeholder,
+    .input-holder textarea,
+    .input-holder textarea::-webkit-input-placeholder,
+    .input-holder select {
         font-size: 15px;
+    }
+
+    .iframe-holder iframe {
+        height: 300px;
+    }
+
+    .video-frameholder {
+        padding-top: 40px;
     }
 
 
@@ -364,11 +388,11 @@
         padding-bottom: 20px;
     }
 
-    .input-holder{
+    .input-holder {
         margin-bottom: 20px;
     }
 
-    .from-holder{
+    .from-holder {
         padding-top: 25px;
         max-width: 100%;
     }
@@ -377,8 +401,16 @@
         max-width: 165px;
     }
 
-    section.contact-sec{
+    section.contact-sec {
         padding: 40px 0px;
+    }
+
+    .bitcoin-atm {
+        padding-bottom: 25px;
+    }
+
+    .iframe-holder iframe {
+        height: 270px;
     }
 
 
@@ -572,8 +604,16 @@
         top: 5px;
     }
 
-    .grid-header .contact-me{
+    .grid-header .contact-me {
         display: none;
+    }
+
+    .iframe-holder iframe {
+        height: 350px;
+    }
+
+    .video-frameholder .row {
+        gap: 20px;
     }
 
 
@@ -603,6 +643,22 @@
 
     .cart_remove {
         font-size: 16px;
+    }
+
+    .iframe-holder iframe {
+        height: 280px;
+    }
+
+    .bitcoin-atm {
+        padding-bottom: 0px;
+    }
+
+    .grid-datavideo {
+        gap: 10px;
+    }
+
+    .video-frameholder{
+        padding-top: 20px;
     }
 
 
@@ -646,4 +702,10 @@
 
 
 
+}
+
+@media(max-width:425px) {
+    .iframe-holder iframe {
+        height: 200px;
+    }
 }
