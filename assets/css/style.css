@@ -55,6 +55,14 @@ textarea:focus-visible {
     outline: none;
 }
 
+select{
+    width: 100%;
+}
+
+select:focus-visible{
+    outline:none;
+}
+
 a {
     text-decoration: none;
 }
@@ -114,7 +122,7 @@ ul.navlink {
 }
 
 .contact-me a,
-.contact-me p {
+.contact-me p,.submit-btn button{
     color: var(--color-white);
     padding: 10px 30px;
     border-radius: 5px;
@@ -907,7 +915,7 @@ section.products-mainsec {
 .btmslide-data img {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 
@@ -2797,3 +2805,74 @@ section.multistep-payment .cart-data .header {
 
 
 /* HOW TO ORDER PRODUCT END */
+
+
+/* CONTACT PSGE  */
+
+
+.holder-choose a {
+    color: var(--color-white);
+    font-weight: 400;
+}
+.holder-choose a:hover{
+    color: var(--color-yellow);
+}
+
+.input-holder input,.input-holder textarea,.input-holder select{
+    background: transparent;
+    border: 1px solid #a5a5a5;
+    padding: 5px 10px;
+    color: var(--color-white);
+    height: 50px;
+}
+
+.input-holder textarea{
+    height: auto !important;
+    width: 100%;
+}
+
+
+.input-holder input, .input-holder input::-webkit-input-placeholder,.input-holder textarea,.input-holder textarea::-webkit-input-placeholder,.input-holder select{
+    font-size: 18px;
+    color: var(--color-white);
+    font-weight: 300;
+}
+
+.input-holder {
+    margin-bottom: 30px;
+}
+
+section.contact-sec{
+    padding: 80px 0px;
+}
+
+.submit-btn button{
+    background: var(--color-yellow);
+    transition:0.3s ease-in;
+    max-width: 100%;
+    width: 100%;
+    border: none;
+}
+
+.submit-btn button:hover{
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+.submit-btn {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.from-holder {
+    max-width: 60%;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.input-holder select option{
+    color: var(--color-black);
+}
+
+
+/* CONTACT PSGE END */

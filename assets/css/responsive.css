@@ -32,7 +32,7 @@
     }
 
     .contact-me a,
-    .contact-me p {
+    .contact-me p,.submit-btn button{
         padding: 8px 20px;
         font-size: 16px;
     }
@@ -133,6 +133,16 @@
         width: 15px;
         font-size: 8px;
     }
+
+    
+    section.contact-sec{
+        padding: 60px 0px;
+    }
+
+    .from-holder{
+        padding-top: 50px;
+    }
+
 }
 
 @media(max-width:1400px) {
@@ -160,7 +170,7 @@
     }
 
     .contact-me a,
-    .contact-me p {
+    .contact-me p,.submit-btn button {
         padding: 5px 20px;
         font-size: 14px;
     }
@@ -270,6 +280,14 @@
         gap: 20px !important;
     }
 
+    .input-holder input, .input-holder textarea, .input-holder select {
+        height: 40px;
+    }
+
+    .input-holder input, .input-holder input::-webkit-input-placeholder, .input-holder textarea, .input-holder textarea::-webkit-input-placeholder, .input-holder select {
+        font-size: 15px;
+    }
+
 
 }
 
@@ -344,6 +362,23 @@
 
     .cart-titlemain {
         padding-bottom: 20px;
+    }
+
+    .input-holder{
+        margin-bottom: 20px;
+    }
+
+    .from-holder{
+        padding-top: 25px;
+        max-width: 100%;
+    }
+
+    .submit-btn {
+        max-width: 165px;
+    }
+
+    section.contact-sec{
+        padding: 40px 0px;
     }
 
 
@@ -526,6 +561,7 @@
     .order-process {
         padding-top: 30px;
     }
+
 
 
     .cart-item {
