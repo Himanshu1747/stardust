@@ -263,6 +263,25 @@ $(document).ready(function () {
 
 // CHECK OUT FORM JS END
 
+// ACCORDEAN 
+
+$(function () {
+    $(".grid-acrdean").on("click", function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        if (!$this.hasClass("activeacrdean")) {
+            $(".acrdean-maindata").slideUp(400);
+            $(".grid-acrdean.activeacrdean").removeClass("activeacrdean");
+        }
+        $this.toggleClass("activeacrdean");
+        $this.next().slideToggle();
+    });
+
+});
+
+
+// ACCORDEAN END
+
 
 
 

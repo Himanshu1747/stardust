@@ -55,12 +55,12 @@ textarea:focus-visible {
     outline: none;
 }
 
-select{
+select {
     width: 100%;
 }
 
-select:focus-visible{
-    outline:none;
+select:focus-visible {
+    outline: none;
 }
 
 a {
@@ -122,7 +122,8 @@ ul.navlink {
 }
 
 .contact-me a,
-.contact-me p,.submit-btn button{
+.contact-me p,
+.submit-btn button {
     color: var(--color-white);
     padding: 10px 30px;
     border-radius: 5px;
@@ -193,7 +194,8 @@ ul.navlink {
 }
 
 ul.navlink li a,
-ul.footer-navlist li a,.cart-item a{
+ul.footer-navlist li a,
+.cart-item a {
     color: var(--color-white);
     font-size: 18px;
     font-weight: 400;
@@ -201,7 +203,8 @@ ul.footer-navlist li a,.cart-item a{
 }
 
 ul.navlink li a:hover,
-ul.footer-navlist li a:hover,.cart-item a:hover{
+ul.footer-navlist li a:hover,
+.cart-item a:hover {
     color: var(--color-yellow);
 }
 
@@ -225,7 +228,7 @@ ul.footer-navlist li a:hover,.cart-item a:hover{
     z-index: 1;
 }
 
-.cart-item{
+.cart-item {
     position: relative;
     max-width: fit-content;
     width: 100%;
@@ -2799,7 +2802,7 @@ section.multistep-payment .cart-data .header {
 /* HOW TO ORDER PRODUCT  */
 
 
-.order-process{
+.order-process {
     padding-top: 80px;
 }
 
@@ -2814,11 +2817,14 @@ section.multistep-payment .cart-data .header {
     color: var(--color-white);
     font-weight: 400;
 }
-.holder-choose a:hover{
+
+.holder-choose a:hover {
     color: var(--color-yellow);
 }
 
-.input-holder input,.input-holder textarea,.input-holder select{
+.input-holder input,
+.input-holder textarea,
+.input-holder select {
     background: transparent;
     border: 1px solid #a5a5a5;
     padding: 5px 10px;
@@ -2826,13 +2832,17 @@ section.multistep-payment .cart-data .header {
     height: 50px;
 }
 
-.input-holder textarea{
+.input-holder textarea {
     height: auto !important;
     width: 100%;
 }
 
 
-.input-holder input, .input-holder input::-webkit-input-placeholder,.input-holder textarea,.input-holder textarea::-webkit-input-placeholder,.input-holder select{
+.input-holder input,
+.input-holder input::-webkit-input-placeholder,
+.input-holder textarea,
+.input-holder textarea::-webkit-input-placeholder,
+.input-holder select {
     font-size: 18px;
     color: var(--color-white);
     font-weight: 300;
@@ -2842,19 +2852,19 @@ section.multistep-payment .cart-data .header {
     margin-bottom: 30px;
 }
 
-section.contact-sec{
+section.contact-sec {
     padding: 80px 0px;
 }
 
-.submit-btn button{
+.submit-btn button {
     background: var(--color-yellow);
-    transition:0.3s ease-in;
+    transition: 0.3s ease-in;
     max-width: 100%;
     width: 100%;
     border: none;
 }
 
-.submit-btn button:hover{
+.submit-btn button:hover {
     background: var(--color-white);
     color: var(--color-black);
 }
@@ -2870,7 +2880,7 @@ section.contact-sec{
     padding-top: 80px;
 }
 
-.input-holder select option{
+.input-holder select option {
     color: var(--color-black);
 }
 
@@ -2897,23 +2907,23 @@ section.contact-sec{
     text-align: center;
 }
 
-.whyonly-holder p a{
+.whyonly-holder p a {
     color: var(--color-yellow);
     border-bottom: 1px solid transparent;
 
 }
 
-.whyonly-holder p a:hover{
+.whyonly-holder p a:hover {
     color: var(--color-white);
     border-color: var(--color-white);
 }
 
-.bitcoin-atm a{
+.bitcoin-atm a {
     color: var(--color-white);
     border-bottom: 1px solid var(--color-white);
 }
 
-.bitcoin-atm a:hover{
+.bitcoin-atm a:hover {
     color: var(--color-yellow);
     border-color: var(--color-yellow);
 }
@@ -2936,63 +2946,66 @@ section.contact-sec{
 
 
 .btn-whatsapp-pulse {
-	background: #25d366;
+    background: #25d366;
     color: var(--color-white);
-	font-size: 40px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 0;
-	height: 0;
-	padding: 35px;
-	text-decoration: none;
-	border-radius: 50%;
-	animation-name: pulse;
-	animation-duration: 1.5s;
-	animation-timing-function: ease-out;
-	animation-iteration-count: infinite;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    padding: 35px;
+    text-decoration: none;
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
 }
 
 @keyframes pulse {
-	0% {
-		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
-	}
-	80% {
-		box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
-	}
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+
+    80% {
+        box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    }
 }
 
 .btn-whatsapp-pulse-border {
-	bottom: 120px;
-	right: 20px;
-	animation-play-state: paused;
+    bottom: 120px;
+    right: 20px;
+    animation-play-state: paused;
 }
 
 .btn-whatsapp-pulse-border::before {
-	content: "";
-	position: absolute;
-	border-radius: 50%;
-	padding: 25px;
-	border: 5px solid #25d366;
-	opacity: 0.75;
-	animation-name: pulse-border;
-	animation-duration: 1.5s;
-	animation-timing-function: ease-out;
-	animation-iteration-count: infinite;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    padding: 25px;
+    border: 5px solid #25d366;
+    opacity: 0.75;
+    animation-name: pulse-border;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
 }
 
 @keyframes pulse-border {
-	0% {
-		padding: 25px;
-		opacity: 0.75;
-	}
-	75% {
-		padding: 50px;
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
+    0% {
+        padding: 25px;
+        opacity: 0.75;
+    }
+
+    75% {
+        padding: 50px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 
@@ -3008,3 +3021,92 @@ section.contact-sec{
 
 
 /* WHATSAPP END */
+
+
+
+/* FAQ SEC  */
+
+
+.grid-acrdean {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid var(--color-white);
+    padding: 10px 20px;
+    background: transparent;
+}
+
+.icon-acrdn i {
+    font-size: 30px;
+}
+
+
+.icon-acrdn i {
+    animation: faderotate 1s ease;
+}
+
+
+@keyframes faderotate {
+    0% {
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+
+.minuss-image {
+    display: none;
+}
+
+.grid-acrdean.activeacrdean .minuss-image {
+    display: block;
+}
+
+.grid-acrdean.activeacrdean .plus-image {
+    display: none;
+}
+
+.acrdean-maindata {
+    display: none;
+    padding: 15px 20px;
+    background:var(--color-grey);
+}
+
+.grid-acrdean .mini-title {
+    padding-bottom: 0px;
+    font-weight: 500;
+}
+
+.icon-acrdn p {
+    padding: 0px;
+    cursor: pointer;
+}
+
+.acredean-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+ul.faq-lists li {
+    list-style: disc;
+}
+
+ul.faq-lists {
+    margin-left: 20px;
+}
+
+section.faqmains-sec{
+    padding: 80px 0px;
+}
+
+
+/* FAQ SEC END */
