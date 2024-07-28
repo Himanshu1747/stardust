@@ -152,6 +152,27 @@
         padding-top: 50px;
     }
 
+    .btn-whatsapp-pulse {
+        font-size: 30px;
+        padding: 25px;
+    }
+
+    @keyframes pulse-border {
+        0% {
+            padding: 15px;
+            opacity: 0.75;
+        }
+        75% {
+            padding: 40px;
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    
+
 }
 
 @media(max-width:1400px) {
@@ -614,6 +635,25 @@
 
     .video-frameholder .row {
         gap: 20px;
+    }
+
+    .btn-whatsapp-pulse {
+        font-size: 25px;
+        padding: 20px;
+    }
+
+    @keyframes pulse-border {
+        0% {
+            padding: 15px;
+            opacity: 0.75;
+        }
+        75% {
+            padding: 30px;
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
     }
 
 
