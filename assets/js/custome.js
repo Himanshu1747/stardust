@@ -287,5 +287,7 @@ $(function () {
 
 
 // AOS 
-AOS.init();
+AOS.init({
+    disable: window.innerWidth < 768,
+  });
 // AOS END
