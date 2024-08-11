@@ -3110,3 +3110,59 @@ section.faqmains-sec{
 
 
 /* FAQ SEC END */
+
+
+
+
+
+
+section.loginpage-sec {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+section.loginpage-sec::after {
+    position: absolute;
+    content: "";
+    background: #000000ad;
+    inset: 0;
+}
+
+section.loginpage-sec .from-holder {
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+    background: rgb(26 26 26 / 61%);
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+    padding: 20px;
+}
+
+.logo-mainss {
+    max-width: 120px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.input-holder p a{
+    color: var(--color-yellow);
+}
+.input-holder p a:hover{
+    color: var(--color-white);
+}
+
+@media(max-width:767px){
+    section.loginpage-sec .from-holder{
+        padding: 10px;
+    }
+}
